@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+    <picture> <!-- picture é a tag para imagens dinâmicas -->
+        <source media="(max-width: 710px)" srcset="imagens/foto-p.png" type="image/png"> <!-- source define as condições para a imagem ser exibida; media define a condição (nesse caso, a largura máxima da tela); srcset define o caminho da imagem; type define o tipo da imagem -->
+        <source media="(max-width:1010px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h2>Primeira Forma</h2>
+    <audio src="midia/the-grey-room.wav" controls autoplay></audio> <!-- audio é a tag para áudio; src é o caminho do arquivo de áudio; controls adiciona os controles de play, pause, volume, etc; autoplay inicia a reprodução automática -->
+    <h2>Segunda Forma</h2>
+    <audio preload="metadata" controls autoplay> <!-- preload pode ser none, metadata ou auto (que significam respectivamente: não carregar, carregar apenas os metadados e carregar o áudio todo); controls adiciona os controles de play, pause, volume, etc; autoplay inicia a reprodução automática; preload carrega o áudio antes de iniciar a reprodução -->
+        <source src="midia/the-grey-room.mp3" type="audio/mpeg"> <!-- MP3 é o formato mais utilizado, mas é um formato com perdas -->
+        <source src="midia/the-grey-room.ogg" type="audio/ogg"> <!-- OGG é um formato livre, não tem perdas e é mais leve que o MP3 -->
+        <source src="midia/the-grey-room.wav" type="audio/wav"> <!-- WAV e muito pesado, não utilizar -->
+        <p>Seu navegador não repoduz áudio.</p> <!-- mensagem exibida caso o navegador não suporte a tag audio -->
+    </audio>
+</body>
+
+</html>
