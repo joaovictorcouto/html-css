@@ -1,22 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Indica ao navegador que este é um documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma principal da página como Português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Seção de configuração e metadados do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres (UTF-8 aceita acentos e caracteres especiais) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a Viewport para garantir que o site funcione bem em dispositivos móveis -->
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Imagem Flexível</title>
+    <!-- Link para o favicon (ícone da aba do navegador) -->
+    <title>Imagem Flexível</title> <!-- Título da página que aparece na aba -->
 </head>
 
-<body>
-    <h1>Imagem Flexível</h1>
+<body> <!-- Corpo da página, onde fica o conteúdo visível -->
+    <h1>Imagem Flexível</h1> <!-- Título principal de nível 1 -->
     <p>Você está vendo uma imagem completa? Experimente aumentar o tamanho da sua janela para aproveitar melhor a sua
-        experiência &#x1F92F</p>
-    <picture>
+        experiência &#x1F92F</p> <!-- Parágrafo de texto -->
+
+    <picture> <!-- Container para imagens responsivas. Permite definir múltiplas fontes de imagem -->
+        <!-- A tag <source> define as versões alternativas da imagem. O navegador baixa apenas a primeira que se adequar. -->
+
+        <!-- Se a tela tiver no MÁXIMO 750px de largura, usa a imagem pequena (paisagem-p.png) -->
         <source media="(max-width: 750px)" srcset="imagens\paisagem-p.png" type="image/png">
+
+        <!-- Se a tela tiver no MÁXIMO 1210px de largura, usa a imagem média (paisagem-m.png) -->
         <source media="(max-width: 1210px)" srcset="imagens/paisagem-m.png" type="image/png">
+
+        <!-- Tag <img> padrão. É carregada se nenhuma condição acima for atendida (telas maiores que 1210px) ou se o navegador não suportar <picture> -->
         <img src="imagens/paisagem-g.png" alt="Imagem flexível">
     </picture>
 </body>
 
 </html>
+<!--
+    RESUMO RÁPIDO SOBRE A TAG <PICTURE> E "max-width":
+
+    O navegador lê as linhas de CIMA para BAIXO e para assim que encontrar a PRIMEIRA condição verdadeira.
+    
+    Por isso, ao usar "max-width" (largura máxima), a ordem OBRIGATÓRIA é da MENOR para a MAIOR:
+    
+    1. Pequena (max-width: 750px) 
+       -> O navegador pergunta: "A tela é menor que 750px?" 
+       -> Se SIM: Carrega a imagem P e PARA de ler.
+    
+    2. Média (max-width: 1210px) 
+       -> Se chegou aqui, é porque é MAIOR que 750px.
+       -> Pergunta: "É menor que 1210px?"
+       -> Se SIM: Carrega a imagem M e PARA.
+    
+    3. Grande (tag <img>) 
+       -> Caso nenhuma das anteriores sirva, carrega a imagem padrão (G).
+
+    IMPORTANTE: Se você inverter e colocar a Média antes da Pequena, um celular com tela pequena vai "casar" com a regra da média (pois também é menor que 1210px) e carregar a imagem errada.
+-->

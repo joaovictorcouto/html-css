@@ -1,49 +1,59 @@
-<!DOCTYPE html>
-<!-- Declaração do tipo de documento para HTML5. -->
-<html lang="pt-br">
-<!-- Elemento raiz com o atributo de idioma definido para português do Brasil. -->
+<!DOCTYPE html> <!-- Indica o tipo de documento e a versão do HTML usada (no caso, HTML5) -->
+<html lang="en"> <!-- Tag raiz do documento HTML. O atributo lang define o idioma da página (inglês neste caso) -->
 
-<head>
-    <!-- Cabeçalho do documento contendo metadados. -->
+<head> <!-- Cabeçalho do documento: contém metadados e configurações que não aparecem diretamente na página -->
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres UTF-8. -->
+    <!-- Define a codificação de caracteres (UTF-8 suporta a maioria dos caracteres e acentos) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a viewport para design responsivo. -->
+    <!-- Configura a 'viewport' para tornar o site responsivo em dispositivos móveis -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Link para o ícone de atalho (favicon) do site. -->
-    <title>Tags HTML</title>
-    <!-- Título da página exibido na aba do navegador. -->
+    <!-- Linka um ícone externo (favicon) que aparece na aba do navegador -->
+    <title>Tags HTML</title> <!-- Título da página exibido na aba do navegador -->
 </head>
 
-<body>
-    <!-- Corpo do documento onde reside o conteúdo visível. -->
-    <h1>Tags em HTML</h1>
-    <!-- Título de nível 1. -->
+<body> <!-- Corpo do documento: contém todo o conteúdo visível para o usuário -->
+    <h1>Tags em HTML</h1> <!-- Título de nível 1 (o mais importante) -->
     <p>Em HTML5 podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag
-        deverá utilizar em cada caso.</p>
-    <!-- Parágrafo de texto padrão. -->
-    <ul type="square">
-        <!-- Lista não ordenada iniciada com marcadores quadrados (type="square"). -->
+        deverá utilizar em cada caso.</p> <!-- Parágrafo de texto -->
+    <ul> <!-- Início de uma lista não ordenada (Unordered List) - itens com marcadores -->
+        <!-- A tag <abbr> define uma abreviação. O atributo 'title' exibe o significado completo ao passar o mouse (tooltip) -->
         <li><abbr title="Use a tag &lt;p&gt;">Parágrafos</abbr></li>
-        <!-- Item de lista (li). 'abbr' define uma abreviação ou acrônimo; o atributo 'title' exibe uma dica ao passar o mouse. &lt; e &gt; são entidades HTML para < e >. -->
-        <li><abbr title="Use a tag &lt;h&gt;">Títulos</abbr></li>
-        <!-- Mesma estrutura do item acima, mudando apenas o conteúdo e o title. -->
+        <li><abbr title="Use a tag &lt;a&gt;">Títulos</abbr></li>
         <li><abbr title="Use a tag &lt;img&gt;">Imagens</abbr></li>
         <li><abbr title="Use a tag &lt;abbr&gt;">Abreviações</abbr></li>
         <li><abbr title="Use a tag &lt;code&gt;">Códigos-fonte</abbr></li>
         <li><abbr title="Use a tag &lt;pre&gt; antes da tag &lt;code&gt;">Códigos-fonte pré-formatados</abbr></li>
-        <li><abbr title="Use a tag &lt;del&gt;">Texto deletado</abbr> - <del>modelo de texto deletado</del></li>
-        <!-- 'del' renderiza texto riscado, indicando que foi deletado. -->
-        <li><abbr title="Use a tag &lt;ins&gt;">Texto inserido</abbr> - <ins>modelo de texto inserido</ins></li>
-        <!-- 'ins' renderiza texto sublinhado, indicando que foi inserido. -->
-        <li><abbr title="Use a tag &lt;q&gt;">Citação</abbr> - <q>modelo de citação</q></li>
-        <!-- 'q' define uma citação curta inline, geralmente adicionando aspas automaticamente. -->
-        <li><abbr title="Use a tag &lt;blockquote&gt; e o parâmetro &quot;cite&quot;">Citação em bloco</abbr>
-            <blockquote cite="#">modelo de citação</blockquote>
-            <!-- 'blockquote' define uma citação em bloco (longa). 'cite' especifica a URL da fonte da citação. -->
+        <li><abbr title="Use a tag &lt;del&gt;">Texto deletado</abbr></li>
+        <li><abbr title="Use a tag &lt;ins&gt;">Texto inserido</abbr></li>
+        <li><abbr title="Use a tag &lt;q&gt;">Citação curta</abbr></li>
+        <li><abbr title="Use a tag &lt;blockquote&gt; e o atributo &quot;cite&quot;">Citação longa (em bloco)</abbr>
         </li>
-        <li><abbr title="Use a tag &lt;ol&gt; e &lt;li&gt;">Lista numeradas</abbr></li>
-        <li><abbr title="Use a tag &lt;ul&gt; e &lt;li&gt;">Listas com demarcadores</abbr></li>
+        <li><abbr title="Use a tag &lt;ol&gt; e &lt;il&gt; para criar listas numeradas">Listas numeradas.</abbr></li>
+        <ol> <!-- Lista Ordenada (Ordered List) - itens numerados -->
+            <li>Exemplo</li> <!-- Item de lista (List Item) -->
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+        </ol>
+        <li><abbr title="Use a tag &lt;ul&gt; e &lt;li&gt; para criar listas com marcadores">Listas com
+                marcadores.</abbr></li>
+        <p>type="square"</p>
+        <ul type="square"> <!-- O atributo 'type' define o estilo do marcador. 'square' = quadrado preenchido -->
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+        </ul>
+        <p>type="circle"</p>
+        <ul type="circle"> <!-- 'circle' = círculo com borda (vazio por dentro) -->
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+        </ul>
+        <p>type="disc"</p>
+        <ul type="disc"> <!-- 'disc' = disco preenchido (padrão) -->
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+            <li>Exemplo</li>
+        </ul>
     </ul>
 </body>
 
