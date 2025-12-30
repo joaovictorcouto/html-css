@@ -1,21 +1,62 @@
+<!-- Declaração do tipo de documento: Define que este é um documento HTML5 -->
 <!DOCTYPE html>
+<!-- Elemento raiz (root): Inicia o documento HTML e define o idioma da página como Português do Brasil (pt-BR) -->
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Meus vídeos</title>
+<!-- Cabeçalho (head): Contém metadados e configurações da página que não são visíveis diretamente no conteúdo -->
 
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 (permite acentos e caracteres especiais) -->
+    <meta charset="UTF-8">
+
+    <!-- Configuração da Viewport: Garante que o site seja responsivo em dispositivos móveis -->
+    <!-- width=device-width: ajusta a largura da página à largura da tela do dispositivo -->
+    <!-- initial-scale=1.0: define o nível inicial de zoom como 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o Favicon: Ícone que aparece na aba do navegador -->
+    <!-- rel="shortcut icon": relação do link com o documento -->
+    <!-- href="...": caminho para o arquivo da imagem -->
+    <!-- type="image/x-icon": tipo MIME do arquivo -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Título da página: O texto que aparece na aba do navegador -->
+    <title>Meus vídeos</title>
 </head>
 
+<!-- Corpo (body): Contém todo o conteúdo visível da página (textos, imagens, links) -->
+
 <body>
+    <!-- Título principal da página (Heading 1) -->
     <h1>Vídeos legais para assistir</h1>
-    <a href="pagina-video-01.html"><img src="imagens/capa-01.png" alt="Capa Vídeo 01" width="400" height="250"> </a>
-    <a href="pagina-video-02.html"><img src="imagens/capa-02.png" alt="Capa Vídeo 02" width="400" height="250"></a>
+
+    <!-- Link (anchor <a>) envolvendo uma imagem -->
+    <!-- href="...": destino do link quando clicado (neste caso, vai para pagina-video-01.html) -->
+    <a href="pagina-video-01.html">
+        <!-- Imagem (<img>) clicável -->
+        <!-- src="...": caminho da imagem -->
+        <!-- alt="...": texto alternativo para leitores de tela ou se a imagem falhar -->
+        <!-- width e height: largura e altura da imagem em pixels -->
+        <img src="imagens/capa-01.png" alt="Capa Vídeo 01" width="400" height="250">
+    </a>
+
+    <!-- Segundo link com imagem -->
+    <a href="pagina-video-02.html">
+        <img src="imagens/capa-02.png" alt="Capa Vídeo 02" width="400" height="250">
+    </a>
+
+    <!-- Quebra de linha (<br>): Pula uma linha visualmente -->
     <br>
-    <a href="pagina-video-03.html"><img src="imagens/capa-03.png" alt="Capa Vídeo 03" width="400" height="250"></a>
-    <a href="pagina-video-04.html"><img src="imagens/capa-04.png" alt="Capa Vídeo 04" width="400" height="250"></a>
+
+    <!-- Terceiro link com imagem -->
+    <a href="pagina-video-03.html">
+        <img src="imagens/capa-03.png" alt="Capa Vídeo 03" width="400" height="250">
+    </a>
+
+    <!-- Quarto link com imagem -->
+    <a href="pagina-video-04.html">
+        <img src="imagens/capa-04.png" alt="Capa Vídeo 04" width="400" height="250">
+    </a>
 </body>
 
 </html>
