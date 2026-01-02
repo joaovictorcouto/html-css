@@ -1,23 +1,21 @@
-<!DOCTYPE html> <!-- Indica o tipo de documento e a versão do HTML usada (no caso, HTML5) -->
-<html lang="en"> <!-- Tag raiz do documento HTML. O atributo lang define o idioma da página (inglês neste caso) -->
+<!DOCTYPE html> <!-- Define o documento como sendo HTML5 -->
+<html lang="en"> <!-- Início do documento HTML, definindo o idioma como Inglês -->
 
-<head> <!-- Cabeçalho do documento: contém metadados e configurações que não aparecem diretamente na página -->
-    <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres (UTF-8 suporta a maioria dos caracteres e acentos) -->
+<head> <!-- Cabeçalho do documento contendo metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a 'viewport' para tornar o site responsivo em dispositivos móveis -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Linka um ícone externo (favicon) que aparece na aba do navegador -->
-    <title>Tags HTML</title> <!-- Título da página exibido na aba do navegador -->
-</head>
+    <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Define o ícone da página (favicon) -->
+    <title>Tags HTML</title> <!-- Define o título que aparece na aba do navegador -->
+</head> <!-- Fim do cabeçalho -->
 
-<body> <!-- Corpo do documento: contém todo o conteúdo visível para o usuário -->
-    <h1>Tags em HTML</h1> <!-- Título de nível 1 (o mais importante) -->
+<body> <!-- Corpo da página -->
+    <h1>Tags em HTML</h1> <!-- Título principal de nível 1 -->
     <p>Em HTML5 podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag
         deverá utilizar em cada caso.</p> <!-- Parágrafo de texto -->
-    <ul> <!-- Início de uma lista não ordenada (Unordered List) - itens com marcadores -->
-        <!-- A tag <abbr> define uma abreviação. O atributo 'title' exibe o significado completo ao passar o mouse (tooltip) -->
+    <ul> <!-- Início de lista não ordenada -->
         <li><abbr title="Use a tag &lt;p&gt;">Parágrafos</abbr></li>
+        <!-- Item de lista. <abbr>: abreviação com tooltip (title) -->
         <li><abbr title="Use a tag &lt;a&gt;">Títulos</abbr></li>
         <li><abbr title="Use a tag &lt;img&gt;">Imagens</abbr></li>
         <li><abbr title="Use a tag &lt;abbr&gt;">Abreviações</abbr></li>
@@ -29,32 +27,32 @@
         <li><abbr title="Use a tag &lt;blockquote&gt; e o atributo &quot;cite&quot;">Citação longa (em bloco)</abbr>
         </li>
         <li><abbr title="Use a tag &lt;ol&gt; e &lt;il&gt; para criar listas numeradas">Listas numeradas.</abbr></li>
-        <ol> <!-- Lista Ordenada (Ordered List) - itens numerados -->
-            <li>Exemplo</li> <!-- Item de lista (List Item) -->
+        <ol> <!-- Início de lista ordenada (numerada) aninhada -->
+            <li>Exemplo</li> <!-- Item da lista ordenada -->
             <li>Exemplo</li>
             <li>Exemplo</li>
-        </ol>
+        </ol> <!-- Fim da lista ordenada -->
         <li><abbr title="Use a tag &lt;ul&gt; e &lt;li&gt; para criar listas com marcadores">Listas com
                 marcadores.</abbr></li>
         <p>type="square"</p>
-        <ul type="square"> <!-- O atributo 'type' define o estilo do marcador. 'square' = quadrado preenchido -->
+        <ul type="square"> <!-- Lista não ordenada com marcadores quadrados -->
             <li>Exemplo</li>
             <li>Exemplo</li>
             <li>Exemplo</li>
         </ul>
         <p>type="circle"</p>
-        <ul type="circle"> <!-- 'circle' = círculo com borda (vazio por dentro) -->
+        <ul type="circle"> <!-- Lista não ordenada com marcadores circulares vazios -->
             <li>Exemplo</li>
             <li>Exemplo</li>
             <li>Exemplo</li>
         </ul>
         <p>type="disc"</p>
-        <ul type="disc"> <!-- 'disc' = disco preenchido (padrão) -->
+        <ul type="disc"> <!-- Lista não ordenada com marcadores de disco (padrão) -->
             <li>Exemplo</li>
             <li>Exemplo</li>
             <li>Exemplo</li>
         </ul>
     </ul>
-</body>
+</body> <!-- Fim do corpo -->
 
-</html>
+</html> <!-- Fim do documento -->

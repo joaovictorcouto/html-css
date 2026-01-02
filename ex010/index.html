@@ -1,29 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o documento como sendo HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, definindo o idioma como Português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Cabeçalho do documento contendo metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
-</head>
+    <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <title>Trabalhando com links</title> <!-- Define o título que aparece na aba do navegador -->
+</head> <!-- Fim do cabeçalho -->
 
-<body>
-    <h1>Usando links externos</h1>
-    <p>Acessar minha conta do instagram:
-    <ul type="disc">
+<body> <!-- Corpo da página -->
+    <h1>Usando links externos</h1> <!-- Título principal de nível 1 -->
+    <p>Acessar minha conta do instagram: <!-- Parágrafo de texto -->
+    <ul type="disc"> <!-- Lista não ordenada padrão -->
         <li><a href="https://instagram.com/joaovictorcoutooficial">Nesta aba</a></li>
+        <!-- Link que abre na mesma aba (padrão) -->
         <li><a href="https://instagram.com/joaovictorcoutooficial" target="_blank" rel="external">Nova aba</a></li>
+        <!-- Link que abre em nova aba (target="_blank"). rel="external": indica link externo -->
     </ul>
     </p>
     <h1>Links internos</h1>
-    <p>Esta é a primeira página do meu site. Se você quiser, também pode acessar a <a href="pag002.html" rel="next">Página 02</a>.</p>
-    <p>Este é o <a href="../ex009/index.html" target="_blank" rel="self">exercício 009 - Listas</a>. Ele está em outra pasta anterior.</p>
+    <p>Esta é a primeira página do meu site. Se você quiser, também pode acessar a <a href="pag002.html"
+            rel="next">Página 02</a>.</p>
+    <!-- Link interno para pag002.html. rel="next": indica que é a próxima página da sequência -->
+    <p>Este é o <a href="../ex009/index.html" target="_blank" rel="self">exercício 009 - Listas</a>. Ele está em outra
+        pasta anterior.</p>
+    <!-- Link relativo para uma pasta acima (..). target="_blank": nova aba. rel="self": link para o mesmo site/domínio -->
     <p>Acesse a <a href="./documentos/pag003.html">Página 03</a>.</p>
+    <!-- Link relativo para uma subpasta (./documentos). -->
     <h1>Links para download</h1>
     <ul>
-        <li><a href="./livro/meu_livro.pdf" download="meu_livro.pdf" type="application/pdf" target="_blank" rel="self">Baixar o livro em PDF</a></li>
-        <li><a href="./livro/meu_livro.zip" download="meu_livro.zip" type="application/zip" target="_blank" rel="self">Baixar o livro em ZIP</a></li>
+        <li><a href="./livro/meu_livro.pdf" download="meu_livro.pdf" type="application/pdf" target="_blank"
+                rel="self">Baixar o livro em PDF</a></li>
+        <!-- Link para download de PDF. download: sugere nome do arquivo. type: tipo MIME do arquivo -->
+        <li><a href="./livro/meu_livro.zip" download="meu_livro.zip" type="application/zip" target="_blank"
+                rel="self">Baixar o livro em ZIP</a></li>
+        <!-- Link para download de ZIP. type="application/zip" -->
     </ul>
-</body>
+</body> <!-- Fim do corpo -->
 
-</html>
+</html> <!-- Fim do documento -->

@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o documento como sendo HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, definindo o idioma como Português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Cabeçalho do documento contendo metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeos com HTML5</title>
-</head>
+    <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <title>Vídeos com HTML5</title> <!-- Define o título que aparece na aba do navegador -->
+</head> <!-- Fim do cabeçalho -->
 
-<body>
-    <h1>Inserindo vídeos hospedados localmente</h1>
-    <p>Este vídeo está hospedado no meu próprio servidor.</p>
-    <h2>Primeira firma</h2>
-    <video src="midia/meu-video.webm" width="550" poster="imagens/CAPA.png" controls autoplay loop></video> <!--tag video com atributos; src é o caminho do vídeo; width é a largura do vídeo; poster é a imagem que será exibida antes do vídeo ser reproduzido; controls adiciona controles de reprodução; autoplay faz o vídeo iniciar automaticamente; loop faz o vídeo reiniciar ao final-->
+<body> <!-- Corpo da página -->
+    <h1>Inserindo vídeos hospedados localmente</h1> <!-- Título principal -->
+    <p>Este vídeo está hospedado no meu próprio servidor.</p> <!-- Parágrafo -->
+    <h2>Primeira forma</h2> <!-- Subtítulo -->
+    <video src="midia/meu-video.webm" width="550" poster="imagens/CAPA.png" controls autoplay loop></video>
+    <!-- Tag de vídeo simples. src: arquivo; width: largura; poster: imagem de capa; controls: botões; autoplay: auto-play; loop: repetição -->
     <h2>Segunda forma</h2>
     <video width="560" poster="imagens/CAPA.png" controls autoplay loop>
-        <source src="midia/meu-video.mp4" type="video/mp4"> <!--source é uma tag para direcionar vídeos; type indica o formato do vídeo-->
-        <source src="midia/meu-video.webm" type="video/webm">
-        <source src="midia/meu-video.ogv" type="video/ogg">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p> <!--mensagem que aparecerá caso o navegador não suporte a tag video-->
+        <!-- Container de vídeo flexível com múltiplas fontes -->
+        <source src="midia/meu-video.mp4" type="video/mp4"> <!-- Fonte 1: MP4 -->
+        <source src="midia/meu-video.webm" type="video/webm"> <!-- Fonte 2: WebM -->
+        <source src="midia/meu-video.ogv" type="video/ogg"> <!-- Fonte 3: OGG Video -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p> <!-- Fallback para navegadores antigos -->
     </video>
     <h1>Inserindo videos do Youtube</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=6xuWpK-zHzDLLLax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=6xuWpK-zHzDLLLax"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Iframe do YouTube. allow: permissões de recursos do navegador. allowfullscreen: permite tela cheia -->
+</body> <!-- Fim do corpo -->
 
-</html>
+</html> <!-- Fim do documento -->

@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o documento como sendo HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, definindo o idioma como Português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Cabeçalho do documento contendo metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
-</head>
+    <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <title>Listas</title> <!-- Define o título que aparece na aba do navegador -->
+</head> <!-- Fim do cabeçalho -->
 
-<body>
-    <h1>Trabalhando com listas</h1>
-    <h2>Listas ordenadas</h2>
-    <ol type="I" start="1"> <!-- I, i, A, a, 1 -->
-        <li>Acordar</li>
+<body> <!-- Corpo da página -->
+    <h1>Trabalhando com listas</h1> <!-- Título principal de nível 1 -->
+    <h2>Listas ordenadas</h2> <!-- Título de nível 2 -->
+    <ol type="I" start="1">
+        <!-- ol: lista ordenada. type="I": numeração romana maiúscula (I, II, III). start="1": começa no valor 1 -->
+        <li>Acordar</li> <!-- li: item da lista -->
         <li>Banhar</li>
         <li>Estudar a Bíblia</li>
         <li>Café da manhã</li>
@@ -27,8 +29,8 @@
         <li>Dormir</li>
     </ol>
     <h2>Listas não ordenadas</h2>
-    <ul type="square"> <!-- disc, circle, square -->
-        <li>arros</li>
+    <ul type="square"> <!-- ul: lista não ordenada. type="square": marcador quadrado cheio -->
+        <li>arros</li> <!-- item de lista -->
         <li>Feijão</li>
         <li>Ovo</li>
         <li>Manteiga</li>
@@ -40,17 +42,17 @@
         <li>Farinha</li>
     </ul>
     <h2>Linguagens de programação</h2>
-    <ol>
+    <ol> <!-- Lista ordenada padrão (1, 2, 3...) -->
         <li>Antigas</li>
-        <ol type="a">
+        <ol type="a"> <!-- Sublista ordenada com letras minúsculas (a, b, c...) -->
             <li>Fortran</li>
             <li>COBOL</li>
             <li>LISP</li>
             <li>Pascal</li>
             <li>C</li>
-        </ol>
+        </ol> <!-- Fim da sublista -->
         <li>Modernas</li>
-        <ol type="a" start="6"> <!-- O certo é começar do zero de novo - apenas pra estudo -->
+        <ol type="a" start="6"> <!-- Sublista ordenada começando na letra 'f' (6ª letra) -->
             <li>Python</li>
             <li>JavaScript</li>
             <li>Java</li>
@@ -59,11 +61,11 @@
         </ol>
     </ol>
     <h2>Meus jogos favoritos</h2>
-    <ul type="disk">
+    <ul type="disk"> <!-- Lista não ordenada com marcador 'disk' (padrão) -->
         <li>FPS</li>
-        <ul type="circle">
+        <ul type="circle"> <!-- Sublista com marcador circular vazado -->
             <li>Counter Strike</li>
-            <ul type="square">
+            <ul type="square"> <!-- Sub-sublista com marcador quadrado -->
                 <li>CS 1.6</li>
                 <li>CS GO</li>
                 <li>CS GO 2</li>
@@ -86,13 +88,14 @@
         </ul>
     </ul>
     <h2>Lista de Definições</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+    <dl> <!-- dl: lista de definição -->
+        <dt>HTML</dt> <!-- dt: termo a ser definido -->
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd> <!-- dd: descrição/definição do termo -->
         <dt>CSS</dt>
         <dd>Linguagem de marcação para criação do design de um site</dd>
         <dt>JavaScript</dt>
         <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
-</body>
+    </dl>
+</body> <!-- Fim do corpo -->
 
-</html>
+</html> <!-- Fim do documento -->

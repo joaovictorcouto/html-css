@@ -1,19 +1,19 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação de caracteres do arquivo CSS */
 
-body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightskyblue;
-            color: rgb(32, 110, 158);
-        }
+body { /* Seletor global para o corpo da página */
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes: Arial, ou Helvetica, ou sans-serif genérica */
+    background-color: rgb(188, 228, 253); /* Define a cor de fundo como azul claro */
+    color: rgb(0, 45, 73); /* Define a cor do texto principal via RGB */
+}
 
-        h1 {
-            color: darkblue;
-        }
+h1 { /* Seletor para todos os elementos h1 */
+    color: rgb(10, 47, 214); /* Cor do texto azul escuro */
+}
 
-        h2 {
-            color: darkgoldenrod;
-        }
+h2 { /* Seletor para todos os elementos h2 */
+    color: rgb(10, 115, 214); /* Cor do texto dourado escuro */
+}
 
-        p {
-            text-align: justify;
-        }
+p { /* Seletor para todos os parágrafos */
+    text-align: justify; /* Alinha o texto justificando as margens */
+}
