@@ -1,32 +1,52 @@
 @charset "UTF-8";
+/* Define a codificação de caracteres do arquivo CSS */
 
 * {
+    /* Seletor universal */
     font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte padrão para todos os elementos */
 }
 
 body {
+    /* Seletor para o corpo da página */
     background-image: linear-gradient(to right, #4C736C, #267365);
+    /* Gradiente linear horizontal */
 }
 
 main {
+    /* Seletor para o elemento main */
     background-color: white;
+    /* Cor de fundo branca */
     border-radius: 10px;
+    /* Bordas arredondadas de 10px */
     box-shadow: 5px 5px 12px rgba(20, 61, 54, 0.7);
+    /* Sombra da caixa: deslocamento x, y, desfoque, cor com transparência */
     width: 600px;
+    /* Largura fixa */
     padding: 10px;
+    /* Espaçamento interno */
     margin: auto;
+    /* Centraliza o elemento horizontalmente */
 }
 
 h1 {
+    /* Seletor para h1 */
     color: #F23030;
+    /* Cor do texto vermelha */
     text-align: center;
+    /* Alinhamento centralizado */
     text-shadow: 1px 1px 2px #861b1bce;
+    /* Sombra do texto: x, y, desfoque, cor */
 }
 
 h2 {
+    /* Seletor para h2 */
     color: #F29F05;
+    /* Cor do texto laranja */
 }
 
 p {
+    /* Seletor para parágrafos */
     text-align: justify;
+    /* Alinhamento justificado */
 }
