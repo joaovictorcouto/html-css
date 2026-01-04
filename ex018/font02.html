@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como Português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres (suporte a acentos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta a visualização para dispositivos móveis -->
+    <title>Fontes Externas Baixadas</title> <!-- Título da aba do navegador -->
+    <style>
+        /* @font-face: Regra CSS para registrar fontes personalizadas baixadas (locais) */
+        @font-face {
+            font-family: 'Tiza Corroída';
+            /* Nome que daremos à fonte para usá-la no código */
+            src: url('fonts/tiza.ttf') format('truetype');
+            /* Caminho do arquivo da fonte e seu formato (ttf = truetype) // tipos de format() mais comuns: opentype (otf), ttf (truetype), embedded-opentype (eot), truetype-aat (apple advanced typography), svg (svg)...*/
+            font-weight: normal;
+            /* Peso padrão desta fonte */
+            font-style: normal;
+            /* Estilo padrão desta fonte */
+        }
+
+        /* Importa a fonte Google Sans diretamente dos servidores do Google */
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+        body {
+            /* Shorthand 'font': permite definir várias propriedades de uma vez.
+               Ordem: style weight size/line-height family */
+            /* Shorthand Aqui: estilo normal, peso 400 (normal), tamanho 1em, família 'Google Sans' (com backup sans-serif) */
+            font: 400 1em 'Google Sans', sans-serif;
+            /* Adiciona um sublinhado a todo o texto */
+            text-decoration: underline;
+            /* Alinha todo o texto ao centro */
+            text-align: justify;
+        }
+
+        h1 {
+            /* Shorthand: estilo itálico, peso normal, tamanho 3em, família 'Tiza Corroída' */
+            font: italic normal 3em 'Tiza Corroída';
+            /* Alinha todo o texto ao centro */
+            text-align: center;
+
+        }
+
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: right;
+            /* Transforma todo o texto em maiúsculo */
+            text-transform: uppercase;
+        }
+
+        p {
+            /* Indenta todo o texto */
+            text-indent: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título de Teste</h1> <!-- Título principal usando a fonte 'Tiza Corroída' definida acima -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis fuga repellat praesentium esse
+        exercitationem recusandae dignissimos qui? Ipsa animi facere delectus esse eum ipsam quidem corporis architecto
+        doloremque ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at unde necessitatibus tenetur,
+        fugiat, repudiandae, libero voluptatum nam accusantium inventore ut dolor saepe enim praesentium. Aspernatur
+        laboriosam facilis iste ipsum.</p> <!-- Parágrafo usando a fonte 'Google Sans' definida no body -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis fuga repellat praesentium esse
+        exercitationem recusandae dignissimos qui? Ipsa animi facere delectus esse eum ipsam quidem corporis architecto
+        doloremque ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at unde necessitatibus tenetur,
+        fugiat, repudiandae, libero voluptatum nam accusantium inventore ut dolor saepe enim praesentium. Aspernatur
+        laboriosam facilis iste ipsum.</p>
+    <h2>Subtítulo do exercício</h2> <!-- Subtítulo usando a fonte 'Google Sans' definida no body -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis fuga repellat praesentium esse
+        exercitationem recusandae dignissimos qui? Ipsa animi facere delectus esse eum ipsam quidem corporis architecto
+        doloremque ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at unde necessitatibus tenetur,
+        fugiat, repudiandae, libero voluptatum nam accusantium inventore ut dolor saepe enim praesentium. Aspernatur
+        laboriosam facilis iste ipsum.</p>
+</body>
+
+</html>

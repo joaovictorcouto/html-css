@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento: define a versão como HTML5 -->
+<html lang="pt-BR"> <!-- Tag raiz: define o idioma do conteúdo como Português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Configura a codificação de caracteres para UTF-8 (acentos e símbolos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport: ajusta a página para a largura do dispositivo móvel -->
+    <title>Fontes com Google Fonts</title> <!-- Define o título exibido na aba do navegador -->
+    <style>
+        /* Tag style: abre uma área para escrever códigos CSS internos na página */
+
+        /* @import: regra do CSS usada para importar fontes externas (neste caso, do Google Fonts) */
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+        body {
+            /* font-family: define a família da fonte. "Google Sans" é a principal, sans-serif é a genérica de backup */
+            font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            /* Melhora a renderização da fonte em diferentes tamanhos (para fontes variáveis) */
+            font-weight: normal;
+            /* Define o peso (negrito) da fonte. Valor 'normal' equivale a 400 */
+            font-style: normal;
+            /* Define o estilo da fonte (como italic ou normal) */
+            font-variation-settings: "GRAD" 0;
+            /* Propriedade avançada para fontes variáveis (ajusta gradação/peso visual), valores comuns: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 */
+        }
+
+        h1 {
+            /* Define a fonte 'Shadows Into Light' para títulos, com 'cursive' como alternativa genérica */
+            font-family: 'Shadows Into Light', cursive;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1> <!-- Título de nível 1 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laborum esse, iusto dolor modi, similique
+        exercitationem asperiores perferendis vel totam pariatur, accusantium officia ea velit? Eaque deleniti expedita
+        officiis maxime! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam temporibus quas rem
+        consequatur! Eveniet laborum possimus sit quibusdam ipsam earum ea similique praesentium, aliquam sequi ex,
+        maiores expedita necessitatibus voluptatem?</p> <!-- Parágrafo de texto -->
+    <h2>Subtítulo do exercício</h2> <!-- Título de nível 2 -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eligendi nulla, praesentium animi at commodi
+        ab eaque assumenda consectetur dicta saepe pariatur voluptatibus amet officiis tenetur, rem asperiores
+        temporibus deleniti.</p>
+</body>
+
+</html>

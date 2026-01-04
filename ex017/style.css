@@ -1,0 +1,25 @@
+body {
+            font-family: 'Work Sans', sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc   // px é a mais recomendada pela W3C
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %    // em é a mais recomendada pela W3C
+
+            Dicas
+            1em: valor relativo ao valor padrão
+            16px: valor padrão (geralmente)
+            1em = 16px
+            */
+            font-size: 1em;
+        }
+        h1{
+            font-style: normal; /*font-style: estilo do texto, italic: itálico, normal: normal, oblique: oblíquo*/
+            font-weight: bold; /*font-weight: peso do texto, lighter: mais leve, normal: normal, bold: mais pesado, bolder: mais pesado, 100-900: peso em números*/
+            font-size: 3em; /*font-size: tamanho do texto*/
+            font-family: 'Work Sans', sans-serif; /*font-family: tipo de fonte*/
+        }
+        h2{
+            font: italic bold 2em 'Work Sans', sans-serif; /*font: font-style, font-weight, font-size, font-family (ordem exata)*/
+        }
