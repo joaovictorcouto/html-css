@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+/* Regra que define a codificação de caracteres a ser usada no arquivo */
+
+/*
+    SELETORES PERSONALIZADOS
+    *   = SELETOR UNIVERSAL
+    #   = ID
+    .   = CLASSE
+    :   = PSEUDO-CLASSE
+    ::  = PSEUDO-ELEMENTO
+    >   = SELETOR DE FILHO
+    +   = SELETOR DE IRMÃO
+    ~   = SELETOR DE IRMÃO GEMEAL
+*/
+
+body {
+    /* Seletor de Tag: Define estilos globais para o corpo da página */
+    background-color: #E7DFF2;
+    /* Propriedade que define a cor de fundo */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a família tipográfica. Se Arial falhar, tenta Helvetica, etc. */
+    color: #351109;
+    /* Cor do texto padrão para todo o documento */
+}
+
+h1 {
+    /* Seletor de Tag: Aplica estilos a todos os elementos <h1> */
+    color: #732514;
+}
+
+h1#principal {
+    /* Seletor de ID (#) especificando a Tag: Aumenta a especificidade (peso) do seletor.
+       Aplica-se apenas ao elemento <h1> que possui o id="principal" */
+    font-style: italic;
+    /* Define o estilo da fonte como itálico */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    font-size: 2.5em;
+    /* Tamanho da fonte relativo (2.5 vezes o tamanho atual) */
+    background-color: #732514;
+    /* Cor de fundo do elemento */
+    color: white;
+    /* Cor do texto (sobrescreve a cor definida no seletor h1 acima devido à maior especificidade) */
+}
+
+h2 {
+    /* Seletor de Tag: Aplica estilos a todos os elementos <h2> */
+    color: #F25A38;
+}
+
+.basico {
+    /* Seletor de Classe (.): Seleciona todos os elementos que possuem class="basico" */
+    color: #2f8515;
+    /* Verde */
+}
+
+.intermediario {
+    /* Seletor de Classe: Seleciona elementos com class="intermediario" */
+    color: #7e8515;
+    /* Amarelo escuro */
+}
+
+.avancado {
+    /* Seletor de Classe: Seleciona elementos com class="avancado" */
+    color: #851515;
+    /* Vermelho */
+}
+
+.destaque {
+    /* Seletor de Classe: Usada para destacar elementos.
+       Pode ser usada em conjunto com outras classes (ex: class="basico destaque") */
+    background-color: #aba0f27a;
+    /* Cor de fundo com transparência (RGBA/Hex com alpha) */
+}

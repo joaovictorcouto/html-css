@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-BR"> <!-- Define o idioma do documento -->
+
+<head> <!-- Cabeçalho (head): contém metadados e configurações da página que não são visíveis no corpo -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres do documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a viewport para dispositivos móveis -->
+    <title>Exemplo de Hover</title> <!-- Define o título da página -->
+    <style>
+        /* Define o estilo do documento */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define a família tipográfica */
+        }
+
+        /* Seletor de filho direto (>): Seleciona apenas parágrafos que são filhos diretos de uma div */
+        div>p {
+            display: none;
+            /* Oculta o elemento da visualização e do layout */
+        }
+
+        /* Usando a pseudo-classe :hover na div pai para alterar o estilo do parágrafo filho */
+        div:hover>p {
+            display: block;
+            /* Torna o elemento visível como um bloco */
+            background-color: red;
+            /* Cor de fundo */
+            color: white;
+            /* Cor do texto */
+            width: 230px;
+            /* Largura do elemento */
+            text-align: center;
+            /* Alinha o texto ao centro */
+        }
+
+        /* Pseudo-classe :hover: Aplica estilos ao elemento quando o mouse está sobre ele */
+        div:hover {
+            color: red;
+            font-weight: bold;
+            /* Define o peso da fonte como negrito */
+        }
+    </style>
+</head>
+
+<body> <!-- Corpo (body): área onde fica todo o conteúdo visível para o usuário -->
+    <h1>Exemplo de Hover</h1> <!-- Título (h1): define o título da página -->
+    <p>Passe o mouse sobre o texto abaixo</p> <!-- Parágrafo (p): define um parágrafo de texto -->
+    <div> <!-- Div: define um elemento de bloco -->
+        Passe o mouse aqui
+        <p>NÃO TINHA ME VISTO, NÉ?</p>
+        <!-- Este parágrafo inicia oculto (display: none) e aparece no hover da div pai -->
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+
+</html>

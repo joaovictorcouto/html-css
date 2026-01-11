@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Pseudo-classe: É um seletor que seleciona e estiliza elementos em estados específicos -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            /* Permite alinhar elementos de bloco lado a lado */
+            background-color: lightgreen;
+            /* Cor de fundo */
+            border: 2px solid black;
+            /* Borda sólida de 2px preta */
+            text-align: center;
+            /* Alinha o texto ao centro */
+            width: 200px;
+            /* Largura do elemento */
+            height: 200px;
+            /* Altura do elemento */
+        }
+
+        /* Pseudo-classe :hover: Define o estado do elemento quando o cursor do mouse passa sobre ele */
+        div:hover {
+            background-color: lightblue;
+            /* Altera a cor de fundo na interação */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Divs configuradas como inline-block para ficarem alinhadas horizontalmente -->
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+</body>
+
+</html>
