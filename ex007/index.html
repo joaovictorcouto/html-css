@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Define o documento como sendo HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, definindo o idioma como Português do Brasil -->
+
+<head> <!-- Cabeçalho do documento contendo metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <title>Formatação de Textos</title> <!-- Define o título que aparece na aba do navegador -->
+    <style>
+        /* Bloco de estilos CSS internos */
+        mark {
+            background-color: violet;
+            /* Define a cor de fundo violeta para a tag <mark> */
+        }
+    </style>
+</head> <!-- Fim do cabeçalho -->
+
+<body> <!-- Corpo da página -->
+    <h1>Principais formatações</h1> <!-- Título principal de nível 1 -->
+    <h2>Negrito / Destaque</h2> <!-- Título de nível 2 -->
+    <p>Nessa frase temos um <b>texto em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <!-- <b>: negrito visual. &lt;/&gt;: representação de caracteres < e > -->
+    <p>Nessa frase temos um <strong>texto em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    <!-- <strong>: negrito com ênfase semântica -->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <!-- <i>: itálico visual -->
+    <p>Nessa frase temos um <em>termo com ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <!-- <em>: ênfase semântica (itálico) -->
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+    <!-- <mark>: destaca texto (marca-texto) -->
+    <p>Outro parágrafo com <mark>texto marcado</mark>.</p>
+    <p>Mais um parágrafo com <mark>texto marcado</mark>.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Temos um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <!-- <big>: texto maior (obsoleto em HTML5); <small>: texto menor -->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <!-- <del>: texto riscado (excluído) -->
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <!-- <ins>: texto sublinhado (inserido) -->
+    <p>A tag &lt;u&gt; <u>sublinha o texto</u>, mas não é recomendada para formatação, pois pode ser confundida com
+        links. (não semântica).</p> <!-- <u>: sublinhado visual -->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>10</sup>+30.</p> <!-- <sup>: sobrescrito (superior) -->
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p> <!-- <sub>: subscrito (inferior) -->
+    <br> <!-- Quebra de linha -->
+    <h3><strong>OBS: PREFIRA USAR AS VERSÕES <mark style="background-color: red; color: white;">SEMÂNTICAS</mark> PQ SÃO
+            MAIS NOVAS!!</strong></h3>
+    <!-- Estilo inline na tag mark mudando cor de fundo e texto -->
+</body> <!-- Fim do corpo -->
+
+</html> <!-- Fim do documento -->

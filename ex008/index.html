@@ -5,52 +5,49 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
-    <title>Formatação de Textos</title> <!-- Define o título que aparece na aba do navegador -->
-    <style>
-        /* Bloco de estilos CSS internos */
-        mark {
-            background-color: violet;
-            /* Define a cor de fundo violeta para a tag <mark> */
-        }
-    </style>
+    <title>Outras Formatações</title> <!-- Define o título que aparece na aba do navegador -->
 </head> <!-- Fim do cabeçalho -->
 
 <body> <!-- Corpo da página -->
-    <h1>Principais formatações</h1> <!-- Título principal de nível 1 -->
-    <h2>Negrito / Destaque</h2> <!-- Título de nível 2 -->
-    <p>Nessa frase temos um <b>texto em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
-    <!-- <b>: negrito visual. &lt;/&gt;: representação de caracteres < e > -->
-    <p>Nessa frase temos um <strong>texto em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
-    <!-- <strong>: negrito com ênfase semântica -->
-    <h2>Itálico / Ênfase</h2>
-    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
-    <!-- <i>: itálico visual -->
-    <p>Nessa frase temos um <em>termo com ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
-    <!-- <em>: ênfase semântica (itálico) -->
-    <h2>Texto Marcado</h2>
-    <p>Podemos criar um <mark>texto marcado</mark> usando a tag &lt;mark&gt;.</p>
-    <!-- <mark>: destaca texto (marca-texto) -->
-    <p>Outro parágrafo com <mark>texto marcado</mark>.</p>
-    <p>Mais um parágrafo com <mark>texto marcado</mark>.</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Temos um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
-    <!-- <big>: texto maior (obsoleto em HTML5); <small>: texto menor -->
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
-    <!-- <del>: texto riscado (excluído) -->
-    <h2>Texto inserido</h2>
-    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
-    <!-- <ins>: texto sublinhado (inserido) -->
-    <p>A tag &lt;u&gt; <u>sublinha o texto</u>, mas não é recomendada para formatação, pois pode ser confundida com
-        links. (não semântica).</p> <!-- <u>: sublinhado visual -->
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas do tipo x<sup>10</sup>+30.</p> <!-- <sup>: sobrescrito (superior) -->
-    <h2>Texto subscrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p> <!-- <sub>: subscrito (inferior) -->
-    <br> <!-- Quebra de linha -->
-    <h3><strong>OBS: PREFIRA USAR AS VERSÕES <mark style="background-color: red; color: white;">SEMÂNTICAS</mark> PQ SÃO
-            MAIS NOVAS!!</strong></h3>
-    <!-- Estilo inline na tag mark mudando cor de fundo e texto -->
+    <h1>Outras Formatações</h1> <!-- Título principal de nível 1 -->
+    <h2>Código-fonte / Pré-formatação</h2> <!-- Título de nível 2 -->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!-- code: define um trecho de código de computador -->
+    <p>Código abaixo usando &lt;pre&gt; e &lt;code&gt;:</p>
+    <pre> <!-- pre: texto pré-formatado, preserva espaços e quebras de linha -->
+        <code> <!-- code: define código dentro do pre -->
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pau de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <!-- q: citação curta inline (adiciona aspas automaticamente) -->
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote
+        cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+        <!-- blockquote: citação em bloco (longa). cite: URL da fonte da citação -->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem
+        os blocos de texto. Eles podem conter outros elementos de bloco, bem como elementos inline. Os elementos de
+        bloco
+        são usados para estruturar o conteúdo da página. Eles podem ser usados para agrupar outros elementos, como
+        parágrafos,
+        listas e cabeçalhos. Alguns elementos de bloco comuns incluem &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; a &lt;h6&gt;,
+        &lt;ul&gt;, &lt;ol&gt; e &lt;li&gt;.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!-- abbr: abreviação. title: explicação completa ao passar o mouse -->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!-- bdo: override bidirecional. dir="rtl": direita para esquerda -->
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p> <!-- dir="ltr": esquerda para direita -->
 </body> <!-- Fim do corpo -->
 
 </html> <!-- Fim do documento -->
