@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: #b8b8b8;
+            /* Cor de fundo cinza claro */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Define a família de fontes: Arial, ou Helvetica se falhar, ou qualquer sans-serif */
+            margin: 0px;
+            /* Remove a margem padrão do navegador */
+        }
+
+        header {
+            /* Tag semântica para cabeçalho */
+            background-color: #ebebeb;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #d8d8d8;
+            padding: 4px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+            /*sombra da caixa:
+            1px = deslocamento horizontal
+            1px = deslocamento vertical
+            5px = espessura da sombra
+            rgba(0, 0, 0, 0.445) = cor da sombra (preto com transparência de 44.5%)*/
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(204, 23, 23);
+            font-weight: bold;
+            padding-right: 20px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #ebebeb;
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.445);
+            border-radius: 0px 10px;
+        }
+
+        h1,
+        h2 {
+            /* Agrupamento de seletores: aplica as mesmas regras para h1 dentro de main E para todos os h2 */
+            text-align: center;
+            margin: 10px;
+        }
+
+        main p {
+            /*main p significa que qualquer p que estiver dentro do main vai receber as propriedades abaixo*/
+            text-align: justify;
+            text-indent: 35px;
+        }
+
+        p#assuntos {
+            /* Seletor de ID (#): aplica apenas ao parágrafo com id="assuntos" */
+            text-align: center;
+        }
+
+        div#bolas {
+            width: 400px;
+            /* Mantém o tamanho da caixa */
+            margin: 0px auto;
+            /* Mantém a caixa no centro da tela */
+            text-align: center;
+            /* CENTRALIZA o conteúdo (as bolas) dentro da caixa */
+        }
+
+        p.bola {
+            display: inline-block; /*define como será ocupado o espaço na tela*/
+            width: 100px; /*largura*/
+            height: 100px; /*altura*/
+            border-radius: 50%; /*define o arredondamento da caixa*/
+            margin: 5px; /*margem*/
+        }
+
+        p.verde {
+            background-color: #3de40a;
+        }
+
+        p.amarela {
+            background-color: #e0e40a;
+        }
+
+        p.vermelha {
+            background-color: #e40a0a;
+        }
+
+        section {
+            /* Tag semântica para seções de conteúdo */
+            background-color: #d8d8d8;
+            padding: 5px 10px;
+            margin: 0px auto;
+            /* Margem: 0px em cima/baixo, auto nas laterais (centraliza o elemento) */
+
+        }
+
+        article {
+            /* Tag semântica para conteúdo independente (como postagens de blog ou notícias) */
+            background-color: #c0c0c0;
+            padding: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+            border-radius: 0px 10px;
+        }
+
+        article>h2 {
+            margin: 0px;
+        }
+
+        footer {
+            /* Tag semântica para o rodapé */
+            background-color: #5e5e5e;
+            text-align: center;
+            /* Centraliza o texto */
+            font-size: 0.90em;
+            /* Tamanho da fonte proporcional (90% do tamanho do pai) */
+            padding: 1px;
+        }
+
+        footer>p {
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho principal da página -->
+        <h1>Título do Site Aqui</h1>
+        <nav>
+            <!-- Área de navegação -->
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <div id="bolas">
+        <h2>Como criar uma bola no CSS</h2>
+        <p class="bola verde"></p>
+        <p class="bola amarela"></p>
+        <p class="bola vermelha"></p>
+    </div>
+    <main>
+        <!-- Conteúdo principal da página -->
+        <section>
+            <!-- Seção introdutória ou de links internos -->
+            <p id="assuntos"><a href="#noticias">Notícias</a> | <a href="#esportes">Esportes</a> | <a
+                    href="#entretenimento">Entretenimento</a></p>
+            <!-- Links âncora que levam a IDs específicos na mesma página -->
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Últimas notícias</h2>
+                <p>Fuga adipisci aperiam quia vitae culpa harum animi quo dicta. Minima eos molestiae ratione illum amet
+                    praesentium labore iure natus iusto fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque nobis, quos fuga quia enim dolores corporis blanditiis! Reiciendis suscipit, nesciunt officiis
+                    error veritatis explicabo dolorem laudantium eligendi nisi earum est. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Et magni quam amet perspiciatis nihil. Reiciendis asperiores nostrum
+                    amet. Minus asperiores architecto temporibus iste impedit dolores explicabo commodi minima eligendi
+                    nam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint temporibus repellat quia! Temporibus
+                    delectus molestias voluptates quod praesentium necessitatibus excepturi quibusdam aut tenetur qui
+                    quos, possimus architecto minus vitae officiis. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ducimus non ea adipisci, vitae blanditiis, explicabo, quaerat eius voluptate recusandae id
+                    exercitationem ratione cum doloribus voluptatibus quos! Adipisci consectetur porro
+                    voluptatem.</p>
+            </article>
+        </section>
+
+        <section id="esportes">
+            <article>
+                <h2>Esportes</h2>
+                <p>Fuga adipisci aperiam quia vitae culpa harum animi quo dicta. Minima eos molestiae ratione illum amet
+                    praesentium labore iure natus iusto fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque nobis, quos fuga quia enim dolores corporis blanditiis! Reiciendis suscipit, nesciunt officiis
+                    error veritatis explicabo dolorem laudantium eligendi nisi earum est. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Et magni quam amet perspiciatis nihil. Reiciendis asperiores nostrum
+                    amet. Minus asperiores architecto temporibus iste impedit dolores explicabo commodi minima eligendi
+                    nam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint temporibus repellat quia! Temporibus
+                    delectus molestias voluptates quod praesentium necessitatibus excepturi quibusdam aut tenetur qui
+                    quos, possimus architecto minus vitae officiis. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ducimus non ea adipisci, vitae blanditiis, explicabo, quaerat eius voluptate recusandae id
+                    exercitationem ratione cum doloribus voluptatibus quos! Adipisci consectetur porro voluptatem.</p>
+            </article>
+        </section>
+
+        <section id="entretenimento">
+            <article>
+                <h2>Entretenimento</h2>
+                <p>Fuga adipisci aperiam quia vitae culpa harum animi quo dicta. Minima eos molestiae ratione illum amet
+                    praesentium labore iure natus iusto fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque nobis, quos fuga quia enim dolores corporis blanditiis! Reiciendis suscipit, nesciunt officiis
+                    error veritatis explicabo dolorem laudantium eligendi nisi earum est. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Et magni quam amet perspiciatis nihil. Reiciendis asperiores nostrum
+                    amet. Minus asperiores architecto temporibus iste impedit dolores explicabo commodi minima eligendi
+                    nam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint temporibus repellat quia! Temporibus
+                    delectus molestias voluptates quod praesentium necessitatibus excepturi quibusdam aut tenetur qui
+                    quos, possimus architecto minus vitae officiis. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ducimus non ea adipisci, vitae blanditiis, explicabo, quaerat eius voluptate recusandae id
+                    exercitationem ratione cum doloribus voluptatibus quos! Adipisci consectetur porro voluptatem.</p>
+                <p>Fuga adipisci aperiam quia vitae culpa harum animi quo dicta. Minima eos molestiae ratione illum amet
+                    praesentium labore iure natus iusto fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque nobis, quos fuga quia enim dolores corporis blanditiis! Reiciendis suscipit, nesciunt officiis
+                    error veritatis explicabo dolorem laudantium eligendi nisi earum est. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Et magni quam amet perspiciatis nihil. Reiciendis asperiores nostrum
+                    amet. Minus asperiores architecto temporibus iste impedit dolores explicabo commodi minima eligendi
+                    nam?</p>
+                <p>Fuga adipisci aperiam quia vitae culpa harum animi quo dicta. Minima eos molestiae ratione illum amet
+                    praesentium labore iure natus iusto fugit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque nobis, quos fuga quia enim dolores corporis blanditiis! Reiciendis suscipit, nesciunt officiis
+                    error veritatis explicabo dolorem laudantium eligendi nisi earum est. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Et magni quam amet perspiciatis nihil. Reiciendis asperiores nostrum
+                    amet. Minus asperiores architecto temporibus iste impedit dolores explicabo commodi minima eligendi
+                    nam?</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado por JVCouto</p>
+    </footer>
+</body>
+
+</html>
