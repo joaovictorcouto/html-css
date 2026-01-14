@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 @font-face {
     font-family: 'Idroid';
     src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
@@ -10,6 +12,8 @@ body {
 }
 
 header {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
     background-image: linear-gradient(to bottom, #39cc7c, #1a5c38);
     padding: 10px;
     color: white;
@@ -18,14 +22,17 @@ header {
 }
 
 header h1 {
-    margin: 20px;
+    margin-top: 10px;
     text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 header p {
     margin: 20px auto;
     width: 45%;
     text-align: center;
+    font-weight: normal;
 }
 
 nav a {
@@ -33,7 +40,7 @@ nav a {
     color: white;
     font-weight: bold;
     text-shadow: none;
-    padding: 8px 20px;
+    padding: 5px 20px;
 }
 
 nav a:hover {
@@ -49,8 +56,9 @@ nav a:active {
 main {
     background-color: white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    margin: 20px 10%;
-    padding: 20px 15px;
+    margin: 0px 5%;
+    padding: 10px 15px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 main h2,
@@ -83,5 +91,82 @@ main a.link-especial {
 }
 
 main a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+section#video {
+    background-color: #1a5c38;
+    margin: 0px -15px;
+    padding: 10px 0px;
+}
+
+article#artigo-extra {
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: #ace6c5;
+    border-radius: 5px;
+}
+
+article#artigo-extra h4 {
+    background-color: #39cc7c;
+    color: white;
+    padding: 5px;
+    margin: -10px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 1em;
+}
+
+div.conteudo-lista {
+    display: flex;
+}
+
+article#artigo-extra ul {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+strong.palavra-forte {
+    color: #1a5c38;
+}
+
+main p {
+    margin: 20px 0px;
+}
+
+footer {
+    background-color: #1a5c38;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 15px 0px 0px 0px;
+}
+
+footer p {
+    margin: 0px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
