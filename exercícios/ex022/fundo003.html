@@ -1,39 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração de HTML5 -->
+<html lang="pt-br"> <!-- Idioma português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Codificação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport móvel -->
     <title>Posição dos Fundos</title>
     <style>
         body {
             background-color: rgb(255, 255, 255);
+            /* Fundo branco */
             font: 13pt Arial;
+            /* Fonte tamanho 13pt, família Arial */
             color: black;
+            /* Cor do texto preto */
         }
 
         div.bloco {
+            /* Seletor de classe: seleciona todas as divs com class="bloco" */
             height: 200px;
+            /* Altura da caixa */
             background-image: url('imagens/wallpaper003.jpg');
+            /* Imagem de fundo */
             border: 1px solid black;
+            /* Borda sólida preta de 1px */
             margin: 10px;
+            /* Margem externa de 10px em todos os lados */
             border-radius: 10px;
+            /* Arredondamento das bordas de 10px */
         }
 
         div#area001 {
+            /* ID específico */
             background-position: left top;
+            /* Posiciona a imagem no canto superior esquerdo */
         }
 
         div#area002 {
             background-position: right bottom;
+            /* Posiciona a imagem no canto inferior direito */
         }
 
         div#area003 {
             background-position: center top;
+            /* Centraliza horizontalmente e fixa no topo verticalmente */
         }
 
         div#area004 {
             background-position: center center;
+            /* Centraliza a imagem totalmente (horizontal e vertical) */
         }
     </style>
 </head>
@@ -42,7 +56,7 @@
     <h1>Posição de um background</h1>
 
     <h2>background-position: left top;</h2>
-    <div class="bloco" id="area001"></div>
+    <div class="bloco" id="area001"></div> <!-- Div com classe "bloco" para estilos gerais e ID para específico -->
     <h2>background-position: right bottom;</h2>
     <div class="bloco" id="area002"></div>
     <h2>background-position: center top;</h2>

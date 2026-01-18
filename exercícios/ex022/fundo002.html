@@ -1,50 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo</title>
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br"> <!-- Elemento raiz, idioma português do Brasil -->
+
+<head> <!-- Metadados e cabeçalho -->
+    <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport para responsividade -->
+    <title>Fundo</title> <!-- Título na aba -->
     <style>
+        /* Estilos CSS */
         body {
+            /* Seletor para o corpo da página */
             background-color: rgb(255, 255, 255);
+            /* Define a cor de fundo da página (branco) */
             font: 13pt Arial;
+            /* Define o tamanho e a família da fonte de uma vez (shorthand) */
             color: black;
+            /* Define a cor do texto */
         }
 
-        div { 
+        div {
+            /* Seletor para todas as tags div */
             width: 90%;
+            /* Define a largura como 90% do elemento pai */
             height: 400px;
+            /* Define a altura fixa de 400 pixels */
             background-color: lightgray;
+            /* Cor de fundo cinza claro para as divs */
             border: 1px solid black;
+            /* Borda de 1px, sólida e preta */
         }
 
         div#area001 {
+            /* Seletor para a div com id="area001" */
             background-image: url('imagens/pattern001.png');
+            /* Imagem de fundo */
             background-repeat: repeat;
+            /* Padrão: Repete a imagem na horizontal e vertical */
         }
 
         div#area002 {
+            /* Seletor para a div com id="area002" */
             background-image: url('imagens/pattern002.png');
             background-repeat: repeat-x;
+            /* Repete a imagem apenas no eixo X (horizontal) */
         }
 
         div#area003 {
+            /* Seletor para a div com id="area003" */
             background-image: url('imagens/pattern003.png');
             background-repeat: repeat-y;
+            /* Repete a imagem apenas no eixo Y (vertical) */
         }
 
         div#area004 {
+            /* Seletor para a div com id="area004" */
             background-image: url('imagens/pattern004.png');
             background-repeat: no-repeat;
+            /* Não repete a imagem */
         }
     </style>
 </head>
-<body>
-    <h1>Repetições em background-image</h1>
 
-    <h2>background-repeat: repeat;</h2>
-    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
-    <div id="area001"></div>
+<body>
+    <h1>Repetições em background-image</h1> <!-- Título principal -->
+
+    <h2>background-repeat: repeat;</h2> <!-- Título de nível 2 -->
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p> <!-- Parágrafo -->
+    <div id="area001"></div> <!-- Divisão genérica identificada como area001 -->
     <h2>background-repeat: repeat-x;</h2>
     <p>Repete apenas no eixo horizontal.</p>
     <div id="area002"></div>
@@ -55,4 +76,5 @@
     <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
     <div id="area004"></div>
 </body>
+
 </html>
