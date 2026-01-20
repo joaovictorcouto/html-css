@@ -1,38 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Início do documento HTML com idioma português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Cabeçalho do documento, contém metadados e estilos -->
+    <meta charset="UTF-8"> <!-- Configuração de codificação de caracteres (UTF-8 suporta acentos) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
         #container {
+            /* Seletor de ID para a seção principal */
             position: relative;
+            /* Define o container como referência para elementos com posição absoluta dentro dele */
             height: 500px;
+            /* Define uma altura fixa para o container */
             background-color: lightsalmon;
+            /* Cor de fundo caso a imagem falhe */
             padding: 10px;
+            /* Espaçamento interno de 10 pixels */
             background-image: url('imagens/target001.png');
+            /* Define a imagem de fundo do container */
             background-size: 100% 100%;
+            /* Faz a imagem de fundo ocupar 100% da largura e altura do elemento */
         }
 
         #conteudo {
+            /* Seletor de ID para o conteúdo interno (a caixa vermelha) */
             position: absolute;
+            /* Posiciona o elemento de forma absoluta em relação ao #container */
             height: 200px;
             width: 400px;
             background-color: red;
-            /* margin: auto; alinha horizontalmente */
             background-image: url('imagens/target001.png');
             background-size: 100% 100%;
+
+            /* Técnica de Centralização Absoluta */
             top: 50%;
+            /* Desloca o topo da caixa para 50% da altura do container */
             left: 50%;
+            /* Desloca a esquerda da caixa para 50% da largura do container */
             transform: translate(-50%, -50%);
+            /* Move a caixa -50% da sua própria largura e altura, centralizando-a perfeitamente */
         }
     </style>
 </head>
 
-<body>
-    <section id="container">
-        <article id="conteudo">
+<body> <!-- Corpo do documento, onde fica o conteúdo visível -->
+    <section id="container"> <!-- Seção que funciona como o painel principal -->
+        <article id="conteudo"> <!-- Artigo dentro do container que será centralizado -->
 
         </article>
     </section>
