@@ -4,30 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
-            height: 100vh;
+            height: 98vh;
             /* Ocupa 100% da altura da viewport */
-            background-color: black;
-            /* Cor de fundo preta (fallback se a imagem falhar) */
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            /* Centralizado horizontalmente, topo verticalmente */
-            background-repeat: no-repeat;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
-            /* cover: A imagem cobre toda a área disponível, podendo ser cortada se necessário */
-            /* Outros valores de background-size:
-               contain: Redimensiona para mostrar a imagem inteira dentro da área;
-               auto: Tamanho original da imagem;
-            */
+            /* Shorthand background: color image position repeat [size] attachment - "size" não funciona as vezes, pode colocar separado abaixo */
         }
 
         main {
             background-color: white;
             /* Fundo branco para o conteúdo principal */
-            width: 500px;
-            /* Largura fixa */
+            max-width: 700px;
+            /* Largura máxima*/
             padding: 10px;
             /* Espaçamento interno de 10px em todos os lados */
             margin: auto;
@@ -43,14 +34,14 @@
 <body>
     <main> <!-- Conteúdo principal da página -->
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus nemo maxime quod veritatis qui quis
-            dolorem similique vel! Animi, libero odit officiis nihil laudantium accusamus? Commodi error repudiandae
-            dolore.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, tempore dolor quae atque sequi fugit consectetur
-            sapiente officia quas iusto optio omnis praesentium ipsam et, vel dolores vitae, minus assumenda!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti accusantium aperiam asperiores
-            fugiat rerum dicta ab nulla hic delectus totam repellat dolorem ad nemo, molestias suscipit molestiae
-            exercitationem tenetur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit hic voluptates ad aperiam accusantium, ratione,
+            odio explicabo perferendis dolorem iusto provident iure voluptatum eligendi quas voluptate blanditiis ipsa,
+            nostrum repellat?</p>
+        <img width="100%" src="imagens/pattern001.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit hic voluptates ad aperiam accusantium, ratione,
+            odio explicabo perferendis dolorem iusto provident iure voluptatum eligendi quas voluptate blanditiis ipsa,
+            nostrum repellat?</p>
+        <img width="100%" src="imagens/pattern004.png" alt="">
     </main>
 </body>
 
