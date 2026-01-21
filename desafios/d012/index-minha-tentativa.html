@@ -21,6 +21,11 @@
             padding: 0px;
         }
 
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
+            font-weight: normal;
+        }
+
         header {
             position: relative;
             background-color: #000;
@@ -35,20 +40,70 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        h1#titulo {
+            font-family: 'Passion One', cursive;
+            font-weight: normal;
+            font-size: 80px;
+            font-variant: small-caps;
         }
 
         main {
             background-color: #FFFFFF;
+        }
 
+        main section {
+            background-color: #FFFFFF;
+            padding: 60px 0px 60px 30px;
+        }
+
+        main pre {
+            font-family: 'Sriracha', cursive;
+            font-weight: normal;
+            color: #000;
+            font-size: 1.7em;
+        }
+
+        .estrofe-impar {
+            background-color: white;
+        }
+
+        .estrofe-dois {
+            background: white url('imagens/background001.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .estrofe-quatro {
+            background: white url('imagens/background002.jpg') left center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .estrofe-par {
+            background-color: #0000005e;
+            width: 350px;
+            color: #fff;
+            margin-left: -10px;
+            padding-left: 10px;
+            text-shadow: 1px 1px 0px #000000cc;
         }
 
         footer {
-            background-color: #000;
+            background-color: #000000;
             color: #fff;
-            font-family: Verdana, Tahoma, sans-serif;
-            font-weight: normal;
             text-align: center;
             padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -56,8 +111,8 @@
 <body>
     <header>
         <section>
-            <h1>Cordel Moderno</h1>
-            <p>Por <strong>Milton Duarte</strong></p>
+            <h1 id="titulo">Cordel Moderno</h1>
+            <p>Por <strong><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a></strong></p>
         </section>
     </header>
     <main>
@@ -73,7 +128,7 @@ Vou dizer tudo em poesia.
             </pre>
         </section>
         <section class="estrofe-dois">
-            <pre>
+            <pre class="estrofe-par">
 Não é mais como era antes
 É tudo abreviado
 "Você" só tem duas letras
@@ -103,7 +158,7 @@ Decifre esse rabisco.
             </pre>
         </section>
         <section class="estrofe-quatro">
-            <pre>
+            <pre class="estrofe-par">
 Tenho saudade das cartas
 Escritas com a própria mão
 Mandava no mês de Junho
@@ -134,7 +189,7 @@ Deixe que Deus interprete.
         </section>
     </main>
     <footer>
-        <p>Site criado por <strong>Gustavo Guanabara</strong> para o <strong>Cursoemvideo</strong></p>
+        <p>Site criado por <strong><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Gustavo Guanabara</a></strong> para o <strong><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">CursoemVideo</a></strong></p>
     </footer>
 </body>
 
