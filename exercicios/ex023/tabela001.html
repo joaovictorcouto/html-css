@@ -1,61 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Início do HTML em português brasileiro -->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8"> <!-- Codificação de caracteres Unicode -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <!-- Ajuste de escala para dispositivos móveis -->
+    <title>Tabelas</title> <!-- Título da aba do navegador -->
     <style>
+        /* Início das regras CSS */
         body {
+            /* Seleciona o corpo da página */
             font-family: Arial, Helvetica, sans-serif;
+            /* Define a fonte do texto */
         }
+
+        /* Fecha a regra do body */
 
         table {
+            /* Seleciona a tabela */
             width: 400px;
+            /* Define a largura fixa */
+            height: 400px;
+            /* Define a altura fixa */
             border-collapse: collapse;
+            /* Une as bordas das células */
         }
 
-        tr.cor {
-            background-color: lightcoral;
-        }
+        /* Fecha a regra da tabela */
 
         td {
+            /* Seleciona as células de dados */
             border-width: 1px;
+            /* Define a espessura da borda */
             border-style: solid;
+            /* Define o estilo sólido da borda */
             border-color: black;
+            /* Define a cor preta da borda */
             padding: 8px;
+            /* Espaçamento interno da célula */
+            text-align: center;
+            /* Alinhamento horizontal centralizado */
+            vertical-align: bottom;
+            /* Alinhamento vertical na base */
         }
 
-        td.dado {
-            background-color: lightblue;
-        }
-    </style>
-</head>
+        /* Fecha a regra da célula */
+    </style> <!-- Fim das regras CSS -->
+</head> <!-- Fim do cabeçalho -->
 
-<body>
-    <h1> Minha primeira tabela</h1>
-    <table>
+<body> <!-- Início do conteúdo visível -->
+    <h1> Minha primeira tabela</h1> <!-- Título principal de nível 1 -->
+    <table> <!-- Início da tabela -->
+        <tr> <!-- Início da primeira linha -->
+            <td>A1</td> <!-- Célula de dado A1 -->
+            <td>B1</td> <!-- Célula de dado B1 -->
+            <td>C1</td> <!-- Célula de dado C1 -->
+        </tr> <!-- Fim da linha -->
         <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr class="cor">
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td>A2</td> <!-- Célula de dado A2 -->
+            <td>B2</td> <!-- Célula de dado B2 -->
+            <td>C2</td> <!-- Célula de dado C2 -->
         </tr>
         <tr>
-            <td class="dado">A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td>A3</td> <!-- Célula de dado A3 -->
+            <td>B3</td> <!-- Célula de dado B3 -->
+            <td>C3</td> <!-- Célula de dado C3 -->
         </tr>
-    </table>
-</body>
+        <tr>
+            <td>A4</td> <!-- Célula de dado A4 -->
+            <td>B4</td> <!-- Célula de dado B4 -->
+            <td>C4</td> <!-- Célula de dado C4 -->
+        </tr>
+    </table> <!-- Fim da tabela -->
+</body> <!-- Fim do conteúdo visível -->
 
-</html>
+</html> <!-- Fim do documento HTML -->

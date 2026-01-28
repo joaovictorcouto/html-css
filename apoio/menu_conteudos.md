@@ -66,6 +66,9 @@ Este arquivo serve como um guia rápido para encontrar os tópicos estudados nos
 ### [ex022](../exercícios/ex022/fundo001.html)
 **Tópicos:** Imagens de Fundo (background-image), Repetição de Fundo (background-repeat), Posicionamento de Fundo (background-position), Anexo de Fundo (background-attachment), Background Size, Múltiplos fundos, Alinhamento Vertical (Absolute positioning + Translate).
 
+### [ex023](../exercícios/ex023/tabela001.html)
+**Tópicos:** Introdução a Tabelas (table, tr, td), Border-collapse, Alinhamento Vertical (vertical-align).
+
 
 ## DESAFIOS
 
@@ -98,3 +101,6 @@ Este arquivo serve como um guia rápido para encontrar os tópicos estudados nos
 
 ### [d010](../desafios/d010/android.html)
 **Tópicos:** Design Responsivo (Projeto Android), CSS Externo, Semântica HTML, Layout Moderno.
+
+### [d012](../desafios/d012/index.html)
+**Tópicos:** Projeto Cordel, Efeito Parallax (background-attachment: fixed), Google Fonts, Viewport Units (vh, vw).
